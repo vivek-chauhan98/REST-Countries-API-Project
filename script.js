@@ -45,7 +45,7 @@ fetch('https://restcountries.com/v3.1/all').then((res) => {
 res.json().then((data) => {
     data.forEach((country) => {
         const cardContainer = document.createElement('a')
-        cardContainer.href = `/index2.html?name=${country.name.common}`
+        cardContainer.href = `/REST-API-Page-2/?name=${country.name.common}`
         cardContainer.classList.add('card-container')
 
       
